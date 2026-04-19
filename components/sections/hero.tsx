@@ -102,12 +102,12 @@ export function Hero() {
       </div>
 
       {/* Mobile Blue Background - only visible on mobile */}
-      <div className="lg:hidden absolute inset-x-0 top-0 h-18 bg-[#09065c] rounded-b-2xl" />
+      <div className="lg:hidden absolute inset-x-0 top-0 h-19 bg-[#09065c] rounded-b-2xl" />
 
       {/* Content Container */}
       <div className="relative z-10">
         {/* Header */}
-        <header className="flex items-center justify-between px-5 lg:px-20 py-5 lg:py-6">
+        <header className="flex items-center justify-between px-5 lg:px-20 py-4 lg:py-6">
           {/* Logo */}
           <div className="hidden lg:block">
             <Logo />
