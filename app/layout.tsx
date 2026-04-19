@@ -11,19 +11,19 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: 'الإنجليزية مع آلان - إنجليزية بلا حدود',
   description: 'تعلم الإنجليزية بلا حدود. احصل على خصم لمدة 3 أشهر من التعلم مع معلمينا الخبراء.',
-  generator: 'v0.app',
+  generator: 'Fiez Alhag',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '../images//logo.jpg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '../images//logo.jpg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '../images/logo.jpg',
         type: 'image/svg+xml',
       },
     ],
