@@ -16,7 +16,7 @@ function Logo() {
         className="rounded-lg object-cover"
       />
       <span className="text-foreground font-semibold text-lg">
-        الإنجليزية<span className="block text-xs font-normal text-muted-foreground">مع آلان</span>
+        تعلم<span className="block text-xs font-normal text-muted-foreground"> الإنجليزية</span>
       </span>
     </div>
   )
@@ -102,7 +102,7 @@ export function Hero() {
       </div>
 
       {/* Mobile Blue Background - only visible on mobile */}
-      <div className="lg:hidden absolute inset-x-0 top-0 h-24 bg-[#09065c] rounded-b-3xl" />
+      <div className="lg:hidden absolute inset-x-0 top-0 h-18 bg-[#09065c] rounded-b-2xl" />
 
       {/* Content Container */}
       <div className="relative z-10">
@@ -244,13 +244,13 @@ export function Hero() {
             <FloatingSquare className="absolute -top-4 right-4 lg:right-20 hidden lg:block" />
             <FloatingSquare className="absolute top-32 -right-2 lg:right-90 hidden lg:block" />
 
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-[84px] font-bold text-foreground leading-[1.15] tracking-tight">
-               تعلم الانجليزية<br />
+            <h1 className="text-5xl sm:text-5xl lg:text-7xl xl:text-[84px] font-bold text-[#09065c] leading-[1.15] tracking-tight">
+              تعلم الانجليزية<br />
               بلا
               حدود
             </h1>
 
-            <p className="text-muted-foreground text-base sm:text-lg lg:text-xl mt-4 lg:mt-8 max-w-md mx-auto lg:mx-0 lg:mr-0">
+            <p className="text-muted-foreground text-[18px] sm:text-lg lg:text-xl mt-4 lg:mt-8 max-w-md mx-auto lg:mx-0 lg:mr-0">
               احصل على خصم لمدة 3 أشهر من التعلم
             </p>
 
