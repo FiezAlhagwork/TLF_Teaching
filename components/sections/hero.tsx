@@ -1,9 +1,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Play} from "lucide-react"
+import { Facebook, Twitter, Instagram, Play } from "lucide-react"
 
 import Header from "./Header"
+
 
 
 function FloatingSquare({ className }: { className?: string }) {
@@ -28,63 +29,54 @@ function FloatingCircle({ className, variant = "white" }: { className?: string; 
   )
 }
 
-function PlayButton({ className }: { className?: string }) {
-  return (
-    <button
-      className={`w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform ${className}`}
-      aria-label="تشغيل الفيديو"
-    >
-      <Play className="w-6 h-6 text-primary fill-primary -mr-1" />
-    </button>
-  )
-}
+
 
 function SocialLinks() {
   return (
     <div className="flex  flex-col gap-4">
       <Link
         href="#"
-        className="group w-10 h-10 md:bg-[#F6F7FF] bg-[#09065c]  rounded-full flex items-center justify-center hover:bg-white/20 transition-colors "
+        className="group w-10 h-10 md:bg-background  bg-primary  rounded-full flex items-center justify-center hover:bg-white/20 transition-colors "
         aria-label="فيسبوك"
       >
-        <Facebook className="w-5 h-5 text-white md:text-[#09065c] md:group-hover:text-[#F6F7FF]" />
+        <Facebook className="w-5 h-5 text-background md:text-primary md:group-hover:text-background" />
       </Link>
       <Link
         href="#"
-        className="group w-10 h-10 md:bg-[#F6F7FF] bg-[#09065c] rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-[#F6F7FF]"
+        className="group w-10 h-10 md:bg-background bg-primary rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-background"
         aria-label="تويتر"
       >
-        <Twitter className="w-5 h-5 text-white md:text-[#09065c] md:group-hover:text-[#F6F7FF]" />
+        <Twitter className="w-5 h-5 text-background md:text-primary md:group-hover:text-background" />
       </Link>
       <Link
         href="#"
-        className=" group w-10 h-10 md:bg-[#F6F7FF] bg-[#09065c] rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-[#F6F7FF]"
+        className=" group w-10 h-10 md:bg-background bg-primary rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-background"
         aria-label="انستغرام"
       >
-        <Instagram className="w-5 h-5 text-white md:text-[#09065c] md:group-hover:text-[#F6F7FF]" />
+        <Instagram className="w-5 h-5 text-background md:text-primary md:group-hover:text-background" />
       </Link>
     </div>
   )
 }
 
 export function Hero() {
-  
+
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Split Background */}
       <div className="absolute inset-0 flex">
-        <div className="w-full lg:w-[55%] bg-#[#F6F7FF]" />
-        <div className="hidden lg:block w-[45%] bg-[#09065c]" />
+        <div className="w-full lg:w-[55%] bg-background" />
+        <div className="hidden lg:block w-[45%] bg-primary" />
       </div>
 
       {/* Mobile Blue Background - only visible on mobile */}
-      <div className="lg:hidden absolute inset-x-0 top-0 h-19 bg-[#09065c] rounded-b-2xl" />
+      <div className="lg:hidden absolute inset-x-0 top-0 h-19 bg-primary rounded-b-2xl" />
 
       {/* Content Container */}
       <div className="relative z-10">
         {/* Header */}
-        <Header/>
-      
+        <Header />
+
         {/* Hero Content */}
         <div className="flex flex-col lg:flex-row items-center px-5 lg:px-20 pt-8 lg:pt-2">
           {/* Left Content */}
@@ -93,7 +85,7 @@ export function Hero() {
             <FloatingSquare className="absolute -top-4 right-4 lg:right-20 hidden lg:block" />
             <FloatingSquare className="absolute top-32 -right-2 lg:right-90 hidden lg:block" />
 
-            <h1 className="text-5xl sm:text-5xl lg:text-7xl xl:text-[84px] font-bold text-[#09065c] leading-[1.15] tracking-tight">
+            <h1 className="text-5xl sm:text-5xl lg:text-7xl xl:text-[84px] font-bold text-primary leading-[1.15] tracking-tight">
               تعلم الانجليزية<br />
               بلا
               حدود
@@ -114,14 +106,14 @@ export function Hero() {
             <div className="relative z-10 flex justify-center lg:justify-start">
               <div className="relative">
                 {/* Mobile background decoration */}
-                <div className="lg:hidden absolute  inset-0 -bottom-4 -right-41 bg-linear-to-t from-primary/30 to-transparent rounded-3xl px-[325px]" />
+                <div className="lg:hidden absolute  inset-0 -bottom-4 -right-70 bg-linear-to-t from-primary/30 to-transparent rounded-3xl px-[500px]" />
 
                 <Image
                   src="/images/funny-woman-with-curly-hair-raises-palms-smies-pos-BH8K23Z 1.png"
                   alt="Student holding books, ready to learn English"
                   width={650}
                   height={650}
-                  className="object-contain relative md:left-32 md:bottom-0 z-10 w-[400px] h-[450px] sm:w-[400px] sm:h-[500px] lg:w-[650px] lg:h-[650px]"
+                  className="object-contain relative lg:left-32 bottom-0 max-sm:-bottom-10 z-10 w-[400px] h-[450px] sm:w-[400px] sm:h-[500px] lg:w-[650px] lg:h-[650px]"
                   priority
                 />
 
@@ -139,8 +131,7 @@ export function Hero() {
                   className="absolute bottom-1/3 left-0 w-4 h-4 hidden lg:block"
                 />
 
-                {/* Play Button */}
-                <PlayButton className="absolute top-1/4 right-4 lg:right-8 hidden lg:flex" />
+
               </div>
             </div>
 
@@ -148,6 +139,7 @@ export function Hero() {
             <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-20">
               <SocialLinks />
             </div>
+
           </div>
         </div>
       </div>

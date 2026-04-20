@@ -1,9 +1,10 @@
 "use client"
-import { Facebook, Twitter, Instagram, Play, Menu, X } from "lucide-react"
+import { Facebook, Twitter, Instagram,  Menu, X } from "lucide-react"
 
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from "next/link"
+import { useState } from 'react'
+import { navLinks } from "@/constant"
 
 function Logo() {
     return (
@@ -26,12 +27,6 @@ function Logo() {
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-    const navLinks = [
-        { label: "من نحن", href: "#about" },
-        { label: "المعلمون", href: "#teachers" },
-        { label: "الدورات", href: "#course" },
-        { label: "الآراء", href: "#feedback" },
-    ]
     return (
         <header className="flex items-center justify-between px-5 lg:px-20 py-4 lg:py-6">
             {/* Logo */}
@@ -43,7 +38,7 @@ const Header = () => {
             <div className="hidden lg:block">
                 <a
                     href="tel:88006369912"
-                    className="text-[#09065c] font-bold text-xl tracking-wider"
+                    className="text-primary font-bold text-xl tracking-wider"
                 >
                     0997013656
                 </a>
@@ -74,7 +69,7 @@ const Header = () => {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="فتح القائمة"
             >
-                {mobileMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
+                {mobileMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-background" />}
             </button>
 
             {/* Navigation - Desktop */}
@@ -92,7 +87,7 @@ const Header = () => {
 
 
             {mobileMenuOpen && (
-                <div className="lg:hidden fixed inset-0 bg-[#09065c] z-40 flex flex-col items-center justify-center px-8">
+                <div className="lg:hidden fixed inset-0 bg-primary z-40 flex flex-col items-center justify-center px-8">
                     {/* Logo in menu */}
                     <div className="absolute top-12 right-5">
                         <div className="flex items-center gap-2.5">
@@ -104,7 +99,7 @@ const Header = () => {
                                 className="rounded-lg object-cover"
                             />
                             <div className="flex flex-col">
-                                <span className="text-white font-bold text-base leading-tight">
+                                <span className="text-background font-bold text-base leading-tight">
                                     الإنجليزية
                                 </span>
                                 <span className="text-white/70 text-[10px]">مع آلان</span>
@@ -140,21 +135,21 @@ const Header = () => {
                                 className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                 aria-label="فيسبوك"
                             >
-                                <Facebook className="w-5 h-5 text-white" />
+                                <Facebook className="w-5 h-5 text-background" />
                             </Link>
                             <Link
                                 href="#"
                                 className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                 aria-label="تويتر"
                             >
-                                <Twitter className="w-5 h-5 text-white" />
+                                <Twitter className="w-5 h-5 text-background" />
                             </Link>
                             <Link
                                 href="#"
                                 className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                 aria-label="انستغرام"
                             >
-                                <Instagram className="w-5 h-5 text-white" />
+                                <Instagram className="w-5 h-5 text-background" />
                             </Link>
                         </div>
                     </div>
