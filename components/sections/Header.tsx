@@ -99,7 +99,7 @@ const Header = () => {
                         <div className="absolute top-12 right-5">
                             <div className="flex items-center gap-2.5">
                                 <img
-                                    src="/image/logo.jpg"
+                                    src="/images/logo.jpg"
                                     alt="TF Logo"
                                     width={40}
                                     height={40}
