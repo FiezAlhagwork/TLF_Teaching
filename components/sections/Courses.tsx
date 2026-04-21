@@ -19,7 +19,7 @@ function FloatingShape({ className, delay = 0 }: { className?: string; delay?: n
         delay
       }}
       className={`absolute pointer-events-none rounded-full blur-3xl ${className}`}
-    />
+    />  
   )
 }
 
