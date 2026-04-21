@@ -107,13 +107,6 @@ export function Courses() {
           })}
         </motion.div>
 
-        {/* Bottom CTA or Decorative Line */}
-        <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          viewport={{ once: true }}
-          className="mt-24 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent w-full  "
-        />
       </div>
     </section>
   )

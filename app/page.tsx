@@ -2,6 +2,7 @@ import { About } from "@/components/sections/About"
 import { Courses } from "@/components/sections/Courses"
 import { Hero } from "@/components/sections/hero"
 import { Results } from "@/components/sections/Results"
+import { Testimonials } from "@/components/sections/Testimonials"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Results />
       <Courses />
+      <Testimonials />
     </main>
   )
 }
