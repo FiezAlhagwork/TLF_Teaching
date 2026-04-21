@@ -69,7 +69,7 @@ export function Courses() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               id="courses-heading"
-              className="text-4xl lg:text-7xl font-black text-primary leading-tight tracking-tight"
+              className="text-4xl lg:text-6xl font-black text-primary leading-tight tracking-tight "
             >
               اختر الدورة <br className="hidden lg:block" /> المناسبة لمستقبلك
             </motion.h2>
@@ -80,7 +80,7 @@ export function Courses() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="text-muted-foreground text-lg lg:text-xl max-w-sm lg:text-right text-center"
+            className="text-muted-foreground text-lg lg:text-xl lg:max-w-sm w-full lg:text-right text-center"
           >
             نقدم لك باقة متنوعة من الدورات المصممة خصيصاً لتناسب جميع المستويات والاحتياجات المهنية والأكاديمية.
           </motion.p>
@@ -91,7 +91,7 @@ export function Courses() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10"
         >
           {courses.map((course, index) => {
             return (
@@ -112,7 +112,7 @@ export function Courses() {
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
           viewport={{ once: true }}
-          className="mt-24 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent w-full"
+          className="mt-24 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent w-full  "
         />
       </div>
     </section>
