@@ -95,7 +95,7 @@ export function Testimonials() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-4xl lg:text-7xl font-black text-primary leading-tight tracking-tight"
+                            className="text-4xl lg:text-6xl font-black text-primary leading-tight tracking-tight"
                         >
                             ماذا يقول طلابنا <br className="hidden lg:block" /> عن تجربتهم معنا
                         </motion.h2>
