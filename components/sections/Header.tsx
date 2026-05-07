@@ -146,21 +146,21 @@ const Header = () => {
                             {/* Social Links in menu */}
                             <div className="flex gap-4 mt-4">
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
                                     className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                     aria-label="فيسبوك"
                                 >
                                     <Facebook className="w-5 h-5 text-background" />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
                                     className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                     aria-label="تويتر"
                                 >
                                     <Twitter className="w-5 h-5 text-background" />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
                                     className="w-11 h-11 bg-white/15 rounded-full flex items-center justify-center hover:bg-white/25 transition-colors"
                                     aria-label="انستغرام"
                                 >

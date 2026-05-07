@@ -3,7 +3,7 @@ import { BookOpen, Clock, BarChart, GraduationCap } from "lucide-react"
 export const navLinks = [
     { label: "من نحن", href: "#about" },
     { label: "المعلمون", href: "#teachers" },
-    { label: "الدورات", href: "#course" },
+    { label: "تواصل معنا", href: "#contact" },
     { label: "الآراء", href: "#feedback" },
 ]
 export const courses = [

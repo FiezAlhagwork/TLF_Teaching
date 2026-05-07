@@ -1,5 +1,5 @@
 "use client"
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react"
+import { Facebook, Twitter, Instagram, Phone, MapPin, MessageCircle, } from "lucide-react"
 import { motion } from "motion/react"
 
 export function Footer() {
@@ -14,12 +14,14 @@ export function Footer() {
             <h3 className="text-3xl lg:text-4xl font-bold mb-3">جاهز لتبدء رحلتك؟</h3>
             <p className="text-white/60 text-lg">انضم إلى مجتمعنا اليوم وابدأ في تطوير مهاراتك اللغوية.</p>
           </div>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-secondary text-primary font-bold rounded-full hover:brightness-110 transition-all shadow-lg"
           >
-            احجز درس مجاني الآن
+            <a href="https://wa.me/0992013656" target="_blank">
+              احجز درس مجاني الآن
+            </a>
           </motion.button>
         </div>
 
@@ -44,13 +46,13 @@ export function Footer() {
               معهد رائد لتعليم اللغة الإنجليزية بأحدث المناهج العلمية والمدرسين المتخصصين لمساعدتك على تحقيق أهدافك.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
+              <a href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
+              <a href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
+              <a href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -67,7 +69,7 @@ export function Footer() {
               <li><a href="#about" className="text-white/60 hover:text-secondary flex items-center gap-2 transition-colors">من نحن</a></li>
               <li><a href="#course" className="text-white/60 hover:text-secondary flex items-center gap-2 transition-colors">الدورات</a></li>
               <li><a href="#feedback" className="text-white/60 hover:text-secondary flex items-center gap-2 transition-colors">آراء الطلاب</a></li>
-              <li><a href="#" className="text-white/60 hover:text-secondary flex items-center gap-2 transition-colors">تواصل معنا</a></li>
+              <li><a href="#contact" className="text-white/60 hover:text-secondary flex items-center gap-2 transition-colors">تواصل معنا</a></li>
             </ul>
           </div>
 

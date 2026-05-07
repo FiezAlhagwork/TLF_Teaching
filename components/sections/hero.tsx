@@ -35,21 +35,21 @@ function SocialLinks() {
   return (
     <div className="flex  flex-col gap-4">
       <Link
-        href="#"
+        href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
         className="group w-10 h-10 md:bg-background  bg-primary  rounded-full flex items-center justify-center hover:bg-white/20 transition-colors "
         aria-label="فيسبوك"
       >
         <Facebook className="w-5 h-5 text-background md:text-primary md:group-hover:text-background" />
       </Link>
       <Link
-        href="#"
+        href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
         className="group w-10 h-10 md:bg-background bg-primary rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-background"
         aria-label="تويتر"
       >
         <Twitter className="w-5 h-5 text-background md:text-primary md:group-hover:text-background" />
       </Link>
       <Link
-        href="#"
+        href="https://www.instagram.com/tlfa_cademy?igsh=em51a3dlNWJxZjQy"
         className=" group w-10 h-10 md:bg-background bg-primary rounded-full flex items-center justify-center hover:bg-white/20 transition-colors md:hover:text-background"
         aria-label="انستغرام"
       >
