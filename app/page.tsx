@@ -1,4 +1,5 @@
 import { About } from "@/components/sections/About"
+import { Contact } from "@/components/sections/Contact"
 import { Courses } from "@/components/sections/Courses"
 import { Footer } from "@/components/sections/Footer"
 import { Hero } from "@/components/sections/hero"
@@ -13,6 +14,7 @@ export default function Home() {
       <Results />
       <Courses />
       <Testimonials />
+      <Contact />
       <Footer/>
     </main>
   )

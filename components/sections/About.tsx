@@ -43,27 +43,27 @@ export function About() {
             </div>
           </div>
 
-          {/* Image Content - Left side in RTL */}
-          <div className="w-full lg:w-[40%] relative">
-            <div className="relative">
-              {/* Blue Background Square */}
-              <div className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 w-full h-full bg-primary rounded-lg" />
-              
-              {/* White Overlay Frame */}
-              <div className="absolute top-2 right-2 lg:top-4 lg:right-4 w-[calc(100%-16px)] lg:w-[calc(100%-32px)] h-[calc(100%-16px)] lg:h-[calc(100%-32px)] bg-white rounded-lg" />
-              
-              {/* Teacher Image */}
-              <div className="relative z-10">
-                <Image
-                  src="/images/teacher.jpg"
-                  alt="معلمة تكتب على السبورة الزجاجية"
-                  width={500}
-                  height={400}
-                  className="rounded-lg object-cover w-full h-[300px] sm:h-[350px] lg:h-[400px]"
-                />
-              </div>
+            {/* Image Content - Left side in RTL */}
+            <div className="w-full lg:w-[40%] relative">
+              <div className="relative">
+                {/* Blue Background Square */}
+                <div className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 w-full h-full bg-primary rounded-lg" />
 
-              {/* Play Button */}
+                {/* White Overlay Frame */}
+                <div className="absolute top-2 right-2 lg:top-4 lg:right-4 w-[calc(100%-16px)] lg:w-[calc(100%-32px)] h-[calc(100%-16px)] lg:h-[calc(100%-32px)] bg-white rounded-lg" />
+
+                {/* Teacher Image */}
+                <div className="relative z-10">
+                  <Image
+                    src="/images/teacher.jpg"
+                    alt="معلمة تكتب على السبورة الزجاجية"
+                    width={500}
+                    height={400}
+                    className="rounded-lg object-cover w-full h-[300px] sm:h-[350px] lg:h-[400px]"
+                  />
+                </div>
+
+                {/* Play Button */}
 
             </div>
           </div>

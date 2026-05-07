@@ -41,7 +41,7 @@ const Header = () => {
                     href="tel:88006369912"
                     className="text-primary font-bold text-xl tracking-wider"
                 >
-                    0997013656
+                    0992013656
                 </a>
             </div>
 

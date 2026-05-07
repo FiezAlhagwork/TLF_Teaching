@@ -145,18 +145,17 @@ export function Results() {
                                      In RTL, index 0 is on the right, so wave should go to the left.
                  */}
                                 {/* Desktop: Show after 1st and 2nd items in each row */}
-                                {(index + 1) % 3 !== 0 && (
-                                    <div className="hidden lg:block flex-1 relative h-5 -mx-4">
-                                        <WavyLine className="top-1/2 -translate-y-1/2 left-0 w-full rotate-180" />
-                                    </div>
-                                )}
+                                <div className="hidden lg:block flex-1 relative h-5 -mx-4">
+                                    <WavyLine className="top-1/2 -translate-y-1/2 left-0 w-full rotate-180" />
+                                </div>
+
 
                                 {/* Tablet: Show after 1st in row */}
-                                {(index + 1) % 2 !== 0 && (
-                                    <div className="hidden md:block lg:hidden flex-1 relative h-5 -mx-4">
-                                        <WavyLine className="top-1/2 -translate-y-1/2 left-0 w-full rotate-180" />
-                                    </div>
-                                )}
+
+                                <div className="hidden md:block lg:hidden flex-1 relative h-5 -mx-4">
+                                    <WavyLine className="top-1/2 -translate-y-1/2 left-0 w-full rotate-180" />
+                                </div>
+
                             </div>
 
                             {/* Text Description */}
